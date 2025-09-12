@@ -5,6 +5,9 @@ plugins {
     //custom
     alias(libs.plugins.kotlin.serialization)
     //alias(libs.plugins.google.services)
+    //hilt
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.ksp)
 
 }
 
@@ -83,4 +86,8 @@ dependencies {
 
     // Data Store
     implementation(libs.androidx.datastore.preferences)
+
+    // hilt
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
 }

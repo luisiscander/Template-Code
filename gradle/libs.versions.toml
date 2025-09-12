@@ -10,14 +10,16 @@ lifecycleRuntimeKtx = "2.9.3"
 activityCompose = "1.10.1"
 composeBom = "2024.09.00"
 #custom
-splash="1.0.1"
-navigationcompose="2.9.2"
-iconExtended="1.6.0"
-retrofit="2.9.0"
-serialization="1.9.0"
-firebaseBom="34.0.0"
-datastore="1.1.7"
+splash = "1.0.1"
+navigationcompose = "2.9.2"
+iconExtended = "1.6.0"
+retrofit = "2.9.0"
+serialization = "1.9.0"
+firebaseBom = "34.0.0"
+datastore = "1.1.7"
 googleServices = "4.4.3"
+hilt = "2.56.2"
+ksp = "2.1.21-2.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -59,6 +61,10 @@ firebase-ai = { group = "com.google.firebase", name = "firebase-ai" }
 # DataStore
 androidx-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
 
+#Hilt
+hilt-android = {module = "com.google.dagger:hilt-android ", version.ref = "hilt" }
+hilt-compiler = {module = "com.google.dagger:hilt-compiler", version.ref= "hilt" }
+
 
 
 [plugins]
@@ -69,4 +75,8 @@ kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "ko
 #custom
 kotlin-serialization={id= "org.jetbrains.kotlin.plugin.serialization", version.ref="kotlin"}
 google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+
+#Hilt
+hilt = { id= "com.google.dagger.hilt.android", version.ref="hilt"}
+ksp = {id = "com.google.devtools.ksp", version.ref = "ksp"}
 
